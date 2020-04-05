@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Christopher Ermel | Project ONE | COMP1073 Client-Side JavaScript</title>
+    <script src="main.js" async></script>
+   <link href="main.css" rel="stylesheet">
+  </head>  
+  <body>
+    <div class="wrapper">
+     <header>
+       <h1>Welcome All!</h1>
+       <hr>
+     </header>
+     <main>
+      <p id ="intro">Please Select Either the Student List or Instructor List.</p>
+      <ul>
+        <select id="selectList" onchange="changeList(value);">
+        	<option id="clear" value="default">Choose List...</option>
+	        <option value="student">Students</option>
+	        <option value="instructor">Instructors</option>
+      	</select>
+      </ul>
+      <p id="listInfo">Please select a list from above.</p>
+      <p id="listContent"></p>
+      </main>
+      <footer>
+      	<hr>
+        <p>Christopher Ermel - Project 1 - 09/30/2019</p>
+      </footer>
+    </div><!--end wrapper-->
+  </body>
+</html>
